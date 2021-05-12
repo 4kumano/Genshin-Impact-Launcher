@@ -115,12 +115,6 @@
     <Resource Include="launcher_IDI_ICON1.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Screenshot 2021-05-11 202516.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Genshin Impact logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="de6xryh-26adec02-f0cf-4dd2-b568-d3acffc10124.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
