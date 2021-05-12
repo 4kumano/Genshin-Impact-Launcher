@@ -8,8 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
-        <Image x:Name="BackgroundImage" Stretch="UniformToFill" Source="Screenshot 2021-05-11 202516.png"/>
-        <Image x:Name="genshinImpactLogo" HorizontalAlignment="Left" Height="204" Margin="80,78,0,0" VerticalAlignment="Top" Width="375" Source="Genshin Impact logo.png" Stretch="UniformToFill"/>
+        <Image x:Name="BackgroundImage" Stretch="UniformToFill" Source="de6xryh-26adec02-f0cf-4dd2-b568-d3acffc10124.png"/>
         <StackPanel x:Name="toolbarPanel" HorizontalAlignment="Center" Width="1280" Height="30" VerticalAlignment="Top" Background="Black" MouseDown="toolbarPanel_MouseDown"/>
         <Button x:Name="closeButton" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Background="Black" BorderBrush="Black" Content="{materialDesign:PackIcon Kind=Close}" Click="closeButton_Click" TabIndex="0" IsTabStop="False"/>
         <Button x:Name="minimizeButton" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Background="Black" BorderBrush="Black" Content="{materialDesign:PackIcon Kind=Minus}" Margin="0,0,48,0" Click="minimizeButton_Click" TabIndex="0" IsTabStop="False"/>
@@ -20,10 +19,10 @@
         </StackPanel>
         <Button x:Name="launchButton" Content="Launch" Background="#FFFFCA07" Foreground="#FF836313" BorderBrush="#FFFFCA07" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="58" Width="232" Margin="0,0,150,70" Click="launchButton_Click"/>
 
-        <Button x:Name="facebookButton" Content="{materialDesign:PackIcon Kind=Facebook}" Background="#59000000" BorderBrush="#FFFFCA07" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,63,16,0" Width="61"/>
-        <Button x:Name="discordButton" Content="{materialDesign:PackIcon Kind=Discord}" Background="#59000000" BorderBrush="#FFFFCA07" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,143,16,0" Width="61"/>
-        <Button x:Name="redditButton" Content="{materialDesign:PackIcon Kind=Reddit}" Background="#59000000" BorderBrush="#FFFFCA07" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,223,16,0" Width="61"/>
-        <Button x:Name="youtubeButton" Content="{materialDesign:PackIcon Kind=Youtube}" Background="#59000000" BorderBrush="#FFFFCA07" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,303,16,0" Width="61"/>
-        <Button x:Name="helpButton" Content="{materialDesign:PackIcon Kind=QuestionMark}" Background="#59000000" BorderBrush="#FFFFCA07" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,670,16,0" Width="61"/>
+        <Button x:Name="facebookButton" Content="{materialDesign:PackIcon Kind=Facebook}" Background="#59000000" BorderBrush="#FFB52D20" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,63,16,0" Width="61"/>
+        <Button x:Name="discordButton" Content="{materialDesign:PackIcon Kind=Discord}" Background="#59000000" BorderBrush="#FFB52D20" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,143,16,0" Width="61"/>
+        <Button x:Name="redditButton" Content="{materialDesign:PackIcon Kind=Reddit}" Background="#59000000" BorderBrush="#FFB52D20" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,223,16,0" Width="61"/>
+        <Button x:Name="youtubeButton" Content="{materialDesign:PackIcon Kind=Youtube}" Background="#59000000" BorderBrush="#FFB52D20" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,303,16,0" Width="61"/>
+        <Button x:Name="helpButton" Content="{materialDesign:PackIcon Kind=QuestionMark}" Background="#59000000" BorderBrush="#FFB52D20" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,670,16,0" Width="61"/>
     </Grid>
 </Window>

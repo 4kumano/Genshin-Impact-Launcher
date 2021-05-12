@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Input;
 using System.Diagnostics;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Genshin_Impact_Launcher
 {
@@ -11,7 +12,7 @@ namespace Genshin_Impact_Launcher
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static string genshinImpactLocation = @"GenshinImpact.exe";
+        public static string genshinImpactLocation = Properties.Resources.genshinImpactLocation;
 
         public MainWindow()
         {
@@ -43,7 +44,22 @@ namespace Genshin_Impact_Launcher
 
         private void settingsButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("This feature has not been implemented yet.", "Error.", MessageBoxButton.OK, MessageBoxImage.Error);
+            ShowChangeGenshinLocationDialogueBox();
+        }
+
+        private void ShowChangeGenshinLocationDialogueBox()
+        {
+            //Opens a file dialog that will allow the user to select the location of their Genshin Impact.
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Title = "Genshin Impact Location:";
+                ofd.Filter = "Exe Files (.exe)|*.exe|All Files (*.*)|*.*";
+
+                if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    genshinImpactLocation = ofd.FileName;
+                }
+            }
         }
 
         private void launchButton_Click(object sender, RoutedEventArgs e)
@@ -58,7 +74,7 @@ namespace Genshin_Impact_Launcher
             }
             else if (!File.Exists(genshinImpactLocation))
             {
-                MessageBox.Show("Genshin Impact could not be found. If the game is installed on your computer, please move the launcher to the game's install directory.", "Error.", MessageBoxButton.OK, MessageBoxImage.Error);
+                System.Windows.Forms.MessageBox.Show("Genshin Impact could not be found. If the game is installed on your computer, please select its location in the settings menu.", "Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
