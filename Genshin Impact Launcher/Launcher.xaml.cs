@@ -74,7 +74,9 @@ namespace Genshin_Impact_Launcher
             }
             else if (!File.Exists(genshinImpactLocation))
             {
-                System.Windows.Forms.MessageBox.Show("Genshin Impact could not be found. If the game is installed on your computer, please select its location in the settings menu.", "Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show("Genshin Impact could not be found. If the game is installed on your computer, please select its location in the prompt that will appear after closing this message. The game's location can be changed any time from the settings menu.", "Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                ShowChangeGenshinLocationDialogueBox();
             }
         }
     }
