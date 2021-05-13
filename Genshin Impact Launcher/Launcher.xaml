@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Genshin_Impact_Launcher"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="Launcher" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
         <Image x:Name="BackgroundImage" Stretch="UniformToFill" Source="de6xryh-26adec02-f0cf-4dd2-b568-d3acffc10124.png"/>
         <StackPanel x:Name="toolbarPanel" HorizontalAlignment="Center" Width="1280" Height="30" VerticalAlignment="Top" Background="Black" MouseDown="toolbarPanel_MouseDown"/>

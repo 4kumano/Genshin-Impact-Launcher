@@ -44,7 +44,9 @@ namespace Genshin_Impact_Launcher
 
         private void settingsButton_Click(object sender, RoutedEventArgs e)
         {
-            ShowChangeGenshinLocationDialogueBox();
+            SettingsWindow settingsWindow = new SettingsWindow();
+
+            settingsWindow.Show();
         }
 
         private void ShowChangeGenshinLocationDialogueBox()
@@ -74,9 +76,7 @@ namespace Genshin_Impact_Launcher
             }
             else if (!File.Exists(genshinImpactLocation))
             {
-                System.Windows.Forms.MessageBox.Show("Genshin Impact could not be found. If the game is installed on your computer, please select its location in the prompt that will appear after closing this message. The game's location can be changed any time from the settings menu.", "Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                ShowChangeGenshinLocationDialogueBox();
+                System.Windows.Forms.MessageBox.Show("Genshin Impact could not be found. If the game is installed on your computer, please select its location via the settings menu.", "Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
