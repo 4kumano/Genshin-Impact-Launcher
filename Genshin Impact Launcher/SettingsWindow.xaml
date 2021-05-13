@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Genshin_Impact_Launcher"
         mc:Ignorable="d"
-        Title="Settings" Height="524" Width="820" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="Settings" Height="524" Width="820" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="Settings_Loaded">
     <Grid>
         <Image x:Name="Background" Source="SettingsWindow.png" Stretch="UniformToFill" MouseDown="Background_MouseDown"/>
         <Button x:Name="closeButton" Content="{materialDesign:PackIcon Kind=Close}" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,26,34,0" BorderBrush="White" Foreground="#DD000000" Background="White" Click="closeButton_Click"/>

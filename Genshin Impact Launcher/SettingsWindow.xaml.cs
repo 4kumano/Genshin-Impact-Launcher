@@ -47,5 +47,10 @@ namespace Genshin_Impact_Launcher
                 }
             }
         }
+
+        private void Settings_Loaded(object sender, RoutedEventArgs e)
+        {
+            installationPathwayTextBlock.Text = MainWindow.genshinImpactLocation;
+        }
     }
 }
